@@ -1,0 +1,43 @@
+YUI.Env.JSONP.yui_3_16_0_1_1473340203717_3632({
+   "ads" : [
+      {
+         "beacon" : "https://beap.gemini.yahoo.com/mbcsc?bv=1.0.0&es=rXwuO0IGIS_.FtHhcfUOJGC09UpSQR.6ivZr3zFlMoiei85YE5VEW_B_G4xlLlYkHrDUnzUVjTRAvFRVKxdxanwhKFHqXg52sSIQxBnu9CIqguCNxIfdxh0GUVTGKyx6hKUAn_WWxkOq.kz0xghkPZk_94d204BclEdAiYXqTLMP2s423UI5hc.CX13_7RCvqFNJjgsez15IOVrQ6omWPRGQHQG0OMOpzyOiIjfeR6.h.EijTFlVvj6Ar4QQXykM7x1iW.CUnDxW6lz4WKjSuGuinE4TCRwGmYcXeJ2Wxfqu52GXzybn3SpRsCExml0nT1w3T3voo8cquniBoBZLE0eYl9_e8cak5GH7AeRfBm9Qj0AR5BuXN20OzpRDkFboxtTGgWY74PqlyYlSOmjtuRnocZEM09NHbgV7qASrZyaItzAseOSGGRiAbzmtd24-&ap=$(AD_POSN)",
+         "bidUSD" : 0.31270,
+         "ccCode" : "STRM",
+         "clickProbability" : 0.0,
+         "creativeId" : 32369849013,
+         "displayUrl" : "http://l.yimg.com/av/curveball/ads/pr/RESIZE/82x82/b20a828816326b7cf240b81d7a91bd84.jpeg",
+         "index" : 1,
+         "landingPageUrl" : "https://ad.doubleclick.net/ddm/trackclk/N356204.290625BR.YAHOO.COM/B10315115.137857847;dc_trk_aid=310238205;dc_trk_cid=74166605;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=",
+         "normalizedEcpm" : 0.31270,
+         "rsc" : 0.0003409249129617820,
+         "sponsoredBy" : "NET",
+         "tag" : "{\"ad_feedback_beacon\":\"https://us.af.beap.bc.yahoo.com/af?bv=1.0.0&bs=(15nfesjng(gid$a3b281c8-75c5-11e6-861e-7775764ac896-7f64b4f47700,st$1473340239721000,li$0,cr$32369849013,dmn$c32369849013,srv$3,exp$1473347439721000,ct$27,v$1.0,adv$1387161,pbid$1,seid$4964388))&r=1473340239721&al=$(AD_FEEDBACK)\",\"advertiser_id\":\"1387161\",\"callToAction\":\"Learn More\",\"clickUrl\":\"https://beap.gemini.yahoo.com/mbclk?bv=1.0.0&es=eXophPkGIS9TYk7CaygX9W9LdFF6KT6CEUHESZssWvA4Spr7zigywzv0RunNC9ap96ULq6k9BtcMdKFRcgg.wjRD8U8VtR95lw39XeDQMFINtdJgLBuRrTiG.EWV9PCWC_lpdKvWXx1Jq2lNb_tNsXlJ_i8xzUNCity4vXOTJAvcyO09a5sxv00OLr0mVuH7Hr5a76ktS_.t7hYz70kpw8VmE.81PAOFHgNJYtVejUqyDV5JXHxC9VQ0sq0AyOrZ.Qu5UA2p23BmAfmnkYp5LFnxqIFTuHOHqcofYD6BS8H12w3GCblmLmemIGKavQ4eC.gFNG2yfgpg7.8.Sl47m1HwCGr8UfHDh2dEyPeNI0sLLB7ipRsUNDOVtmgFb6JyeR1pCB0HzGjLZk0PH8TuRIMI5RCjoXYtCP.5UjTkw5uxfUhXE.IruWwqYxrezsCFLbfwZD_4moMLFcuabFd9V3VcSbf_zYJ4il_xykg1rNRZ1v6ps2u1W8zL4YZ.mLOFZYS..WmFFHWB3etFQqgmC9QmJYEKtUtENJphu.afGemmcrQevOgfYpdvGgq4shkdMD4R3SJXGaFV0PMCCUO_uKIrKb4J0wV2kBR3Ch1M6y8eRlCF8Nwo5H3dl1rcxs07ra4zzn4.xRtAxBETwVR0nu3d9qn2MGNKQKKt%26lp=\",\"headline\":\"Venha para o Combo Multi e tenha multivantagens\",\"hqImage\":\"https://s.yimg.com/av/moneyball/ads/1473197342445-8504.jpg\",\"hqImageHeight\":627,\"hqImageWidth\":1200,\"image\":\"http://l.yimg.com/av/curveball/ads/pr/RESIZE/82x82/b20a828816326b7cf240b81d7a91bd84.jpeg\",\"imageHeight\":82,\"imageWidth\":82,\"imprTrackingUrl\":\"https://ad.doubleclick.net/ddm/trackimp/N356204.290625BR.YAHOO.COM/B10315115.137857847;dc_trk_aid=310238205;dc_trk_cid=74166605;ord=1473340239;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?\",\"imprTrackingUrls\":[\"https://ad.doubleclick.net/ddm/trackimp/N356204.290625BR.YAHOO.COM/B10315115.137857847;dc_trk_aid=310238205;dc_trk_cid=74166605;ord=1473340239;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?\"],\"landingUrl\":\"https://ad.doubleclick.net/ddm/trackclk/N356204.290625BR.YAHOO.COM/B10315115.137857847;dc_trk_aid=310238205;dc_trk_cid=74166605;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=\",\"objective\":\"PROMOTE_BRAND\",\"origImg\":\"https://s.yimg.com/av/moneyball/ads/1473197341785-2599.jpg\",\"origImgHeight\":627,\"origImgWidth\":627,\"secHqImage\":\"https://s.yimg.com/av/moneyball/ads/1473197342445-8504.jpg\",\"secImage\":\"https://s.yimg.com/av/curveball/ads/pr/RESIZE/82x82/b20a828816326b7cf240b81d7a91bd84.jpeg\",\"secOrigImg\":\"https://s.yimg.com/av/moneyball/ads/1473197341785-2599.jpg\",\"source\":\"NET\",\"sponsoredByLabel\":\"Sponsored\",\"summary\":\"O dobro de minutos e dados para você navegar e falar à vontade.\",\"uuid\":\"32369849013\"}"
+      },
+      {
+         "beacon" : "https://beap.gemini.yahoo.com/mbcsc?bv=1.0.0&es=rz35WsUGIS.hEf02H7gZMGBjAdGHaHEeurAdu7cViesM3.4v9AK3C84yC9oRFD8oaE_wArmxrWtvAy2Zn4R8ZscH1mfk8YdhwV4Npx4PPRoP6xV58LVIfEQmAVTvjUqPFg7B2.Tuufj7o_RBTdX3ndc7JoIx40WrO1QYraGogkus0lrQ0HMWIa9jNRio.j_MWbdW03Sr0g1iEdUnj0pPtN4g2LydQCot9ytD70Nmh_rqUwmwH0V4i8o6DAnUqYROlw7EKDfVxTnIXKmjN3fLZZoxWY_2DlZfr8X1aV_xZS4MIH7vBUvCRVCeopY.z_wzIMFV0iWtS5rkm2LOAv6Sabe9KRyrM7HTvHrYHHneIdA2jNN1ZZ1t0c2GXvvka0AV3DyPG1bs.9jqQSvQYmgXFLv3nw_3PVGMeOYi6Lg-&ap=$(AD_POSN)",
+         "bidUSD" : 0.0562860,
+         "ccCode" : "STRM",
+         "clickProbability" : 0.001312507590113902,
+         "creativeId" : 32357475905,
+         "displayUrl" : "http://l.yimg.com/av/curveball/ads/pr/RESIZE/82x82/2b77b8cb04c6f26b614e4c2869435b20.jpeg",
+         "index" : 2,
+         "landingPageUrl" : "https://br.zoom.yahoo.net/informatica?og=1000&utm_source=yahoo.com&utm_medium=parceiros&utm_term=ppc_yahoo&utm_content=links&utm_campaign=links",
+         "normalizedEcpm" : 0.05232455320067790,
+         "rsc" : 8.053396766172227e-05,
+         "sponsoredBy" : "Yahoo! Shopping",
+         "tag" : "{\"ad_feedback_beacon\":\"https://us.af.beap.bc.yahoo.com/af?bv=1.0.0&bs=(15m7rhivl(gid$a3b281c8-75c5-11e6-861e-7775764ac896-7f64b4f47700,st$1473340239721000,li$0,cr$32357475905,dmn$c32357475905,srv$3,exp$1473347439721000,ct$27,v$1.0,adv$925698,pbid$1,seid$4964388))&r=1473340239721&al=$(AD_FEEDBACK)\",\"advertiser_id\":\"925698\",\"callToAction\":\"Saiba mais\",\"clickUrl\":\"https://beap.gemini.yahoo.com/mbclk?bv=1.0.0&es=L_LCo38GIS8PvJbCGThfKYnt2GRVtQqyqQUulBfjJqkQT99MUu3UZOE2CBHgdgo1y4kHC2OiRxszAc3aTZ6fTLpMu0dvgCaA_McVuWbX6qjpiJ3vDHrzHojlvTNSVuGkyHHiIziyjEKl5xrkwk9JK.vtDmr.eIhT.LOuL0m60kS7iWICd5cz3oTK76zxfHzZFAYAaGaoJhAbXLSBtSNB9pkNxsqFBQGF1ms0hgiah_sXPuXlfloVoE55hDDMtGdfo79Mkr4Bsqx9gMBR0o_LUEnIXFrpq7l63E1b5iveqGj5P8pjhW5bOLXihPYBTuskCPP8mlx7h.OqE9gY5cjRRYq8Jc.1bBAXRFPE2jKPsYOSRtPzYGZpxJhqu372GUzbLvAIfPaHejYvJXxet4BmachyzlVm3XfLreprCjrCDDp9Tfnilibrygq9aOscVYjXsapB0jwbHKTHmI3K44A90AoUw8k.APytSK9i5IbUTCwULDzp9nIFualwBdtCggkMRcCjAUSIkax77.5MkQHDxZyysrXQx2rHW.229asiSokIj4aHPXt2DYYHML57VTT1LpAOGYKLhoeowv_FVc_H5yrND3cleop3hpuQvJpooNEd23G4gQ8IhFBEK9zdbuaZ1obO.Rh5UJx_Z4pH%26lp=\",\"headline\":\"Tudo sobre informática é aqui!\",\"hqImage\":\"https://s.yimg.com/av/moneyball/ads/1459792175550-9626.jpg\",\"hqImageHeight\":627,\"hqImageWidth\":1200,\"image\":\"http://l.yimg.com/av/curveball/ads/pr/RESIZE/82x82/2b77b8cb04c6f26b614e4c2869435b20.jpeg\",\"imageHeight\":82,\"imageWidth\":82,\"landingUrl\":\"https://br.zoom.yahoo.net/informatica?og=1000&utm_source=yahoo.com&utm_medium=parceiros&utm_term=ppc_yahoo&utm_content=links&utm_campaign=links\",\"objective\":\"PROMOTE_CONTENT\",\"origImg\":\"https://s.yimg.com/av/moneyball/ads/1459792184404-7941.jpg\",\"origImgHeight\":627,\"origImgWidth\":627,\"secHqImage\":\"https://s.yimg.com/av/moneyball/ads/1459792175550-9626.jpg\",\"secImage\":\"https://s.yimg.com/av/curveball/ads/pr/RESIZE/82x82/2b77b8cb04c6f26b614e4c2869435b20.jpeg\",\"secOrigImg\":\"https://s.yimg.com/av/moneyball/ads/1459792184404-7941.jpg\",\"source\":\"Yahoo! Shopping\",\"sponsoredByLabel\":\"Sponsored\",\"summary\":\"Encontre diversos produtos de informática com os melhores preços. Acesse o Yahoo Shopping e aproveite!\",\"uuid\":\"32357475905\"}"
+      }
+   ],
+   "adsRequested" : 8,
+   "adserverLatency" : 3.300000000000000e-05,
+   "section" : {
+      "id" : 4964388
+   },
+   "serverIp" : "fe41.cbs.cb.bf1.yahoo.com",
+   "status" : "0",
+   "totalAds" : 2,
+   "totalLatency" : 0.0464760,
+   "userCountry" : "BR",
+   "version" : "2"
+})
