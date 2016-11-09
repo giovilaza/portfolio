@@ -18,10 +18,11 @@ a:focus {outline:0;}
 
 #content {
     position: relative;
+
 }
 #content ul {
     position: absolute;
-    top: 10px;
+    top:15px;
     right: 40px;
     font-size: 30px;
 }
@@ -260,6 +261,17 @@ font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
 }
 
+.timeline {
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  width:90%;
+  color: #333;
+  padding-bottom: 50px;
+  font-family: 'Calibri', sans-serif;
+  font-size: 16px;
+}
+
 .about p {
   padding-top: 10px;
   line-height: 30px;
@@ -356,26 +368,28 @@ mark.green {
 a[href^="mailto"]:link {
     color: #000:
     text-decoration: none;
+    background-color: #69F0CF;
 }
 
 /* visited link */
 a[href^="mailto"]:visited {
     color: #000;
     text-decoration: none;
+    background-color: #69F0CF;
 }
 
 /* mouse over link */
 a[href^="mailto"]:hover {
     text-decoration: none;
     color: #000;
-    background-color: #69F0CF;
+    background-color: #56C4AA;
 }
 
 /* selected link */
 a[href^="mailto"]:active {
     text-decoration: none;
     color: #000;
-    background-color: #69F0CF;
+    background-color: #56C4AA;
 }
 
 a {
@@ -389,4 +403,9 @@ a {
 figure figcaption {
     font-size: 16px;
     text-align: center;
+}
+
+.spaced {
+  margin-left: 10px;
+  font-size: 16px;
 }
