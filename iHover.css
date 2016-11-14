@@ -409,3 +409,8 @@ figure figcaption {
   margin-left: 10px;
   font-size: 16px;
 }
+
+.tooltip-inner {
+    width: 80px;
+
+}
