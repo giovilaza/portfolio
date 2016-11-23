@@ -1,5 +1,4 @@
 
-
 .ih-item {
   position: relative;
   -webkit-transition: all 0.35s ease-in-out;
@@ -29,7 +28,7 @@
   position: relative;
   width: 220px;
   height: 220px;
-  border-radius: 50%;
+  border-radius: 20%;
 }
 .ih-item.circle .img {
   position: relative;
