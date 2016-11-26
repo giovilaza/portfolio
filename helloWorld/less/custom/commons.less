@@ -1,0 +1,172 @@
+.canvas-bg {
+    text-align: center;
+    margin: 0 auto;
+    > canvas {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: @brand-primary;
+    background-color: transparent;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    position: fixed;
+    width: 100%;
+    bottom: 40px;
+    .nav {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        width:500px;
+        height:60px;
+        margin-left: -250px;
+        margin-top: -30px;
+        > li {
+            position: relative;
+            margin-right: 8px;
+            .border-element {
+                position: absolute;
+                top: 6px;
+                height: 3px;
+                background: transparent;
+                left: 40px;
+                right: 40px
+            }
+            &:active, &.active, &:focus, &.focus {
+                .border-element {
+                    background: @brand-primary;
+                }
+            }
+            > a {
+                font-family: 'Lato', sans-serif;
+                font-weight: 700;
+                font-size: 18px;
+                color: #fff;
+                &:hover {
+                    color: @brand-primary;
+                }
+                &:active, &.active, &:focus, &.focus {
+                    background-color: transparent !important;
+                    > a {
+                        background-color: transparent !important;
+                    }
+                }
+            }
+        }
+    }
+    .navbar .navbar-collapse {
+      text-align: center;
+    }
+    .disclaimer-container {
+        text-align: center;
+    }
+}
+
+.open > .dropdown-toggle {
+    &.btn-primary {
+        background: @active-color !important;
+        border-color: @brand-primary !important;
+    }
+}
+
+.btn-primary {
+    min-width: 230px;
+    padding: 4px 30px;
+    border-radius: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    background: transparent;
+    color:@primary-text-color;
+    &.btn-solid {
+        background: @brand-primary;
+        border-color: @brand-primary;
+    }
+    &:hover, &.hover, &:active, &.active, &:focus {
+        background: @brand-primary;
+        border-color: @brand-primary;
+        box-shadow: none;
+        outline: 0;
+    }
+    &:active, &.active {
+        pointer-events: auto;
+        &:hover, &.hover {
+            background: @brand-primary;
+            border-color: @brand-primary; 
+        }
+    }
+    &.reset-button, &.play-button {
+        min-width: 150px;
+        color:@primary-bg;
+        background: @brand-primary;
+    }
+    &.primary-cta {
+        //text-transform: uppercase;    
+        color:@primary-bg;
+        background: @brand-primary;
+        border:none;
+        //min-width: 250px;
+        &:focus, &.focus {
+            outline: 0;
+        }
+    }
+    &.disabled {
+        border-color:@primary-text-color;
+        pointer-events: none;
+        &:hover {
+            background:transparent;
+            border-color: inherit;
+            opacity: .65;
+        }
+    }
+}
+
+.disclaimer-container {
+    text-align: center;
+    position: fixed;
+    bottom:44px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.language-dropdown {
+    .dropdown-menu {
+        min-width: 230px;
+        height: 257px;
+        overflow-y: scroll;
+        border-radius: 0;
+        background: transparent;
+        border:0;
+        box-shadow: none;
+        padding:0;
+        margin:0;
+        > li {
+            border-top:1px solid @brand-primary;
+            border-left:1px solid @brand-primary;
+            border-right:1px solid @brand-primary;
+            background:@primary-bg-lighter;
+            &:last-child {
+                border-bottom:1px solid @brand-primary;
+            }
+            > a {
+                font-size: 18px;
+                color:@brand-primary;
+                font-family: 'Lato', sans-serif;
+                font-weight: 700;
+                &:hover {
+                    background-color:@dropdown-hover;
+                }
+            }
+        }
+    }
+}
+
+body {
+    background-color: @primary-bg-lighter;
+    color:@primary-text-color;
+}

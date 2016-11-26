@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+    body {
+        background: #a7a7a7;
+    }
+
+</style>
+<canvas width="1280" height="800"></canvas>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/lodash/4.14.0/lodash.min.js"></script>
+
+<script>
+
+    var canvas = document.querySelector("canvas"),
+            context = canvas.getContext("2d"),
+            width = canvas.width,
+            height = canvas.height;
+
+    var n = 350,
+            pi = Math.PI,
+            tau = 2 * pi;
+
+    var scale;
+    var french = [];
+    var german = [];
+    var italian = [];
+    var germanNodes = [];
+    var italianNodes = [];
+    var frenchNodes = [];
+    var radius = 200;
+
+    function langReducer(sum, item) {
+        if (sum[item.CountryLanguage]){
+            sum[item.CountryLanguage].sum += parseInt(item.People);
+        }
+        else {
+            sum[item.CountryLanguage] = {
+                sum: parseInt(item.People),
+                color: '#' + item.Colour
+            };
+        }
+
+        return sum;
+    }
+
+    function toArrayMaxMapper (value) {
+        return value.sum;
+    }
+
+    function nodes (amount, bigIndex, center, color) {
+        return d3.range(amount).map(function (current, index) {
+            var r = Math.random() * radius,
+                    a = bigIndex + index * tau,
+                    x = center.x + r * Math.cos(a),
+                    y = center.y + r * Math.sin(a);
+            return {
+                x: x,
+                y: y,
+                vx: (center.y - y) * 0.005,
+                vy: (x - center.x) * 0.005,
+                color: color
+            };
+        });
+    }
+
+    function scaleAndColorMapper (value) {
+        return [Math.round(scale(value.sum)), value.color];
+    }
+
+    d3.csv('Moving_data_ch3.csv', function(data){
+
+        french = _.chain(data)
+                .filter({ CantonLanguage: "French"})
+                .reduce(langReducer, {})
+                .value();
+
+        german = _.chain(data)
+                .filter({ CantonLanguage: "German"})
+                .reduce(langReducer, {})
+                .value();
+
+        italian = _.chain(data)
+                .filter({ CantonLanguage: "Italian"})
+                .reduce(langReducer, {})
+                .value();
+
+
+        var temp = _.flatten([_.map(french, toArrayMaxMapper), _.map(italian, toArrayMaxMapper), _.map(german, toArrayMaxMapper)]);
+
+        var max = _.max(temp);
+
+        console.log('max', max);
+
+        scale = d3.scaleLog().domain([1, max]).range([1, 20]);
+
+        var bonjour = _.map(french, scaleAndColorMapper);
+        var ciao = _.map(italian, scaleAndColorMapper);
+        var hallo = _.map(german, scaleAndColorMapper);
+
+        console.log(bonjour);
+
+        var centerFrench = {x: 200, y: height * 0.5};
+        var centerItalian = {x: 600, y: height * 0.5};
+        var centerGerman = {x: 1000, y: height * 0.5};
+
+
+        frenchNodes = _.chain(bonjour)
+                .map(function toNode (value, bigIndex) {
+                    return nodes(value[0], bigIndex, centerFrench, value[1]);
+                })
+                .flatten()
+                .value();
+
+        italianNodes = _.chain(ciao)
+                .map(function toNode (value, bigIndex) {
+                    return nodes(value[0], bigIndex, centerFrench, value[1]);
+                })
+                .flatten()
+                .value();
+
+        germanNodes = _.chain(hallo)
+                .map(function toNode (value, bigIndex) {
+                    return nodes(value[0], bigIndex, centerFrench, value[1]);
+                })
+                .flatten()
+                .value();
+
+       var frenchForce = d3.forceSimulation(frenchNodes)
+                .drag(0.0002)
+                .alphaDecay(0)
+                .force("charge", d3.forceManyBody().strength(0.02))
+                .force("center", d3.forceCenter(centerFrench.x, centerFrench.y))
+                .on("tick", ticked);
+
+        var italianForce = d3.forceSimulation(italianNodes)
+                .drag(0.0002)
+                .alphaDecay(0)
+                .force("charge", d3.forceManyBody().strength(0.02))
+                .force("center", d3.forceCenter(centerItalian.x, centerItalian.y))
+                .on("tick", ticked);
+
+        var germanForce = d3.forceSimulation(germanNodes)
+                .drag(0.0002)
+                .alphaDecay(0)
+                .force("charge", d3.forceManyBody().strength(0.02))
+                .force("center", d3.forceCenter(centerGerman.x, centerGerman.y))
+                .on("tick", ticked);
+
+
+        var stroke = d3.scaleLinear()
+                .domain([0, 10])
+                .range(["magenta", "yellow"]);
+
+        var frenchLength = frenchNodes.length;
+        var italianLength = italianNodes.length;
+        var germanLength = germanNodes.length;
+
+        function ticked() {
+            context.clearRect(0, 0, width, height);
+            context.lineWidth = 4;
+            context.lineCap = "square";
+
+            for (var i = 0, frenchNode; i < frenchLength; ++i) {
+                frenchNode = frenchNodes[i];
+                context.beginPath();
+                context.moveTo(frenchNode.x, frenchNode.y);
+                context.lineTo(frenchNode.x + frenchNode.vx * 2, frenchNode.y + frenchNode.vy * 3);
+                context.strokeStyle = frenchNode.color; //stroke(node.vx * node.vx + node.vy * node.vy);
+                context.stroke();
+            }
+
+            for (var i = 0, italianNode; i < italianLength; ++i) {
+                italianNode = italianNodes[i];
+                context.beginPath();
+                context.moveTo(italianNode.x, italianNode.y);
+                context.lineTo(italianNode.x + italianNode.vx * 2, italianNode.y + italianNode.vy * 3);
+                context.strokeStyle = italianNode.color; //stroke(node.vx * node.vx + node.vy * node.vy);
+                context.stroke();
+            }
+
+            for (var i = 0, germanNode; i < germanLength; ++i) {
+                germanNode = germanNodes[i];
+                context.beginPath();
+                context.moveTo(germanNode.x, germanNode.y);
+                context.lineTo(germanNode.x + germanNode.vx * 2, germanNode.y + germanNode.vy * 3);
+                context.strokeStyle = germanNode.color; //stroke(node.vx * node.vx + node.vy * node.vy);
+                context.stroke();
+            }
+        }
+    });
+</script>

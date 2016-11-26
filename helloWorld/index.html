@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/d3.v4.0.0-alpha.33.min.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lodash.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main2.js"></script>
+    <meta charset="UTF-8">
+    <title>Hello world</title>
+    </head>
+
+    <body>
+        
+        <div class="canvas-bg"><canvas width="1280" height="800"></canvas></div>
+        <aside class="logo-container">
+            <span class="logo-typography">Hello World!</span>
+            <a href="#" class="normal-links about-link" style="display:none;">About this project<span class="border-element"></span></a>
+        </aside>
+        <section class="about-introduction" style="display:none;">
+            <div class="close-button-container">
+                <a class="about-close" href="#"><i class="icon icon-close"></i></a>
+            </div>
+            <header class="about-header">
+                <h1 class="big-titles">HELLO WORLD!</h1>
+                <h2 class="subtitle">An exploration into the linguistic immigration flows of Switzerland</h2>
+            </header>
+            <div>
+                <p>Hello World is a tool, that allows the visualization of 56 languages spoken by the immigrants who has came in Switzerland in the 2014. To better read their travel we have mapped the movements in the cantons, the Swiss country has 26 of them which we have grouped by the three main spoken languages: German, French and Italian. Hello World allows the visitor to have a picture of which Swiss area, a specific cultural group has moved to and the rich diversity that Switzerland hosts. </p>
+                <p><b>A project by</b><br>Luigi Basile, Giulia Fiorinelli, Fabian Frei, Giovanna Vilaza</p>
+                <p><b>Data Sources</b><br>© Federal Statistical Office, Neuchâtel 2016</p>
+            </div>
+        </section>
+        <section class="quiz-container">
+            <section class="introduction-block step1">
+                <header class="introduction-header">
+                    <h1 class="big-titles">HELLO WORLD!</h1>
+                    <h2 class="subtitle">An exploration into the linguistic immigration flows of Switzerland</h2>
+                </header>
+                <div class="introduction-text-block">
+                    <p>Hello World is a tool, that allows the visualization of 56 languages spoken by the immigrants who has came in Switzerland in the 2014. To better read their travel we have mapped the movements in the cantons, the Swiss country has 26 of them which we have grouped by the three main spoken languages: German, French and Italian. Hello World allows the visitor to have a picture of which Swiss area, a specific cultural group has moved to and the rich diversity that Switzerland hosts.</p>
+                </div>
+                <footer class="introduction-footer">
+                    <button type="button" class="btn btn-primary primary-cta start-button">Start!</button>
+                </footer>
+            </section>
+            <section class="input-language-block">
+                <div class="steps step2" style="display:none;">
+                    <header class="input-language-header">
+                        <h1 class="smallest-titles">Guess wich language from Switzerland is</h1>
+                    </header>
+                    <div class="input-sentence-block">
+                        <h3 class="input-sentence-title"><span class="sentence-question"></span></h3>
+                    </div>
+                    <div class="input-buttons-block">
+                        <div class="dropdown language-dropdown">
+                          <button class="btn btn-primary dropdown-toggle language-button" type="button" id="dropdownMenuLanguages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="language-button-text">Language</span>
+                            <i class="glyphicon glyphicon-menu-down"></i>
+                          </button>
+                        </div>
+                        <div class="next-step-container">
+                            <button class="btn btn-primary disabled next-button-first">GO!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="input-language-block">
+                <div class="steps step3" style="display:none;">
+                    <header class="input-language-header">
+                        <h1 class="smallest-titles">It means <span class="sentence-solution">"Do not read the following sentence"</span></h1>
+                    </header>
+                    <div class="input-sentence-block">
+                        <h3 class="input-sentence-title">The sentence was in <span class="language-solution">Czech</span></h3>
+                        <p>In 2014, Switzerland received <span class="highest-people-number"><b></b></span> immigrants that speak <span class="language-solution"></span>, at the same time there were <span class="lowest-people-number"></span> immigrants that speak <span class="language-few"></span></p>
+                    </div>
+                    <div class="input-buttons-block">
+                        <div class="next-step-container">
+                            <button class="btn btn-primary btn-solid next-button-last">NEXT ONE</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="compare-content" style="display:none;">
+            <div class="compare-buttons-block">
+                <div class="dropdown language-dropdown compare-dropdown-first">
+                  <button class="btn btn-primary dropdown-toggle compare-button-first" type="button" id="dropdownMenuLanguages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="compare-button-first-text">Language</span>
+                    <i class="glyphicon glyphicon-menu-down"></i>
+                  </button>
+                </div>
+                <div class="dropdown language-dropdown compare-dropdown-second">
+                  <button class="btn btn-primary dropdown-toggle compare-button-second" type="button" id="dropdownMenuLanguages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <span class="compare-button-second-text">Language</span>
+                    <i class="glyphicon glyphicon-menu-down"></i>
+                  </button>
+                </div>
+            </div>
+            <div class="next-step-container">
+                <button class="btn btn-primary compare-now">GO!</button>
+            </div>
+            <div class="compare-disclaimer">Select two languages from Switzerland and compare them</div>
+        </section>
+        <aside class="all-people-cta">
+            <a href="#" class="normal-links compare-button">Compare Languages<span class="border-element"></span></a>
+            <a href="#" class="normal-links reset-button">All Languages<span class="border-element"></span></a>
+        </aside>
+        <aside class="play-button-cta">
+            <a href="#" class="normal-links play-button">Back to quiz</a>
+        </aside>
+        <div class="navbar-container" style="display:none;">
+            <nav class="navbar navbar-default">
+              <div class="container">
+                    <ul class="nav navbar-nav">
+                        <li class="text-center french-cant-button"><a href="#">French Cantons</a><span class="border-element"></span></li> 
+                        <li class="text-center italian-cant-button"><a href="#">Italian Cantons</a><span class="border-element"></span></li> 
+                        <li class="text-center german-cant-button"><a href="#">German Cantons</a><span class="border-element"></span></li> 
+                    </ul>
+              </div>
+            </nav>
+            <div class="disclaimer-container">Select a specific geographic area</div>
+        </div>
+
+        
+    </body>
+
+</html>
