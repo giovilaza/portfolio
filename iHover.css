@@ -188,6 +188,7 @@ h3 {
   opacity: 0;
   filter: alpha(opacity=0);
   font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
 }
 
 .hovereffect button.info:hover {
@@ -205,6 +206,7 @@ h3 {
   color: #000;
   border: 1px solid #000;
   font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
 }
 
 
